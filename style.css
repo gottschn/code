@@ -1,0 +1,108 @@
+                      /* Generales */
+:root{
+    --fuenteHeading: 'Open Sans', sans-serif;
+    --fuenteTabla: 'Open Sans', sans-serif;
+    --colorGris: #dddddd;
+    --colorNegro: #000;
+    --colorBlanco: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /* Table */
+
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--colorGris);
+  }
+
+ 
+
+ th {
+    font-family: var(--fuenteHeading);
+    font-size: 1.5rem;
+    background-color: var(--colorBlanco);
+    padding: 1rem;
+    border: 0.3rem solid var(--colorGris);
+}
+
+td{
+    font-family: var(--fuenteTabla);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px){
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        
+    }
+    tr{
+        border-bottom: 0.7rem solid var(--colorGris);
+    }
+    
+    td {
+        border: none;
+        border-bottom: 0.5rem solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td:before {
+        position: absolute;
+        top: 0.3rem;
+        left: 0.6rem;
+        width: 45%;
+        padding-right: 1rem;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1):before {
+        content: "Nombres";
+    }
+    td:nth-of-type(2):before {
+        content: "Apellidos";
+    }
+    td:nth-of-type(3):before {
+        content: "Edad";
+    }
+    td:nth-of-type(4):before {
+        content: "Nacionalidad";
+    }
+    td:nth-of-type(5):before {
+        content: "Mail";
+    }
+    td:nth-of-type(6):before {
+        content: "Telefono";
+    }
+
+    td:last-of-type{
+        border: none;
+    }
+}
+
+
+
+        
+
+
+

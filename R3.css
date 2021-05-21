@@ -1,0 +1,106 @@
+/* globales */
+:root {
+    --colorBtn: #97dffc;
+    --colorBlanco: #fff;
+    --colorNegro: #000;
+    --colorSecundario: #858ae3;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1 rem = 10px */
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    max-width: 120rem;
+    width: 90%; /* Toma dos valores 90%, 120rem */
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+.texto {
+    font-family: sans-serif;
+}
+
+.texto h1 {
+    font-weight: bold;
+}
+
+.texto p {
+    font-weight: regular;
+}
+
+
+@media (min-width: 768px) {
+    .contenido{
+        display: grid;
+        grid-template-columns:repeat(2,  1fr);
+
+        gap: 2rem;
+    }
+
+    .texto p {
+        padding-top: 2rem;
+    }
+    
+}
+
+@media (min-width: 468px) {
+
+    .contenido{
+        padding-bottom: 2rem;
+    }
+   
+    .texto h1 {
+        padding-top: 2rem;
+    }
+    .texto p {
+        padding-top: 2rem;
+    }
+    
+   
+}
+
+@media (min-width: 368px) {
+
+    .contenido{
+        padding-bottom: 2rem;
+    }
+   
+    .texto h1 {
+        padding-top: 2rem;
+    }
+    .texto p {
+        padding-top: 2rem;
+    }
+    
+   
+}
+
+
+
+
+
+
+
